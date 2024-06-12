@@ -10,4 +10,4 @@ class Calculator {
     }
     fun divide(left: Int, right: Int): Int {
         return left / right
-}
+}}
