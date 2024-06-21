@@ -59,6 +59,21 @@ class MainActivity : ComponentActivity() {
         else {
             displayText.value = leftNumber.toString()
         }
+        fun numberPress(btnNum: Int){
+            if(complete){
+                leftNumber = 0
+                rightNumber =0
+                operation = ""
+                complete = false
+            }
+            if(operation!="" && !complete){
+                rightNumber = rightNumber*10 +btnNum
+            }
+            if(operation =="" &&!complete){
+                leftNumber = leftNumber*10 +btnNum
+            }
+        }
+
 
 
         Column(
